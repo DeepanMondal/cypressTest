@@ -10,6 +10,7 @@ describe('First suit', ()=>{
         //cy.get(".products .product").should('have.length',4);
         cy.get(".products").find(".product").should('have.length',4);
         
+        
         //cy.get(".products").find(".product").eq(1).find(".product-action").click();
         cy.get(".products").find(".product").eq(1).contains("ADD TO CART").click();
         cy.get(".products").find(".product").each(($el,index,$list)=>{
