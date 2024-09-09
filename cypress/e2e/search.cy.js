@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
 it ("search" ,()=>{
-    cy.visit("https://google.com")
+    cy.visit("https://www.google.com")
     
 })
