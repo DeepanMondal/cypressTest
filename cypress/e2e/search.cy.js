@@ -1,5 +1,6 @@
 /// <reference types="cypress"/>
 
+
 describe('First suit', ()=>{
 
     it('Test case1', ()=>{
@@ -28,4 +29,3 @@ describe('First suit', ()=>{
     // it('Test case3', ()=>{
         
     // })
-})
