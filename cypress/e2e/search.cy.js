@@ -21,6 +21,9 @@ describe('First suit', ()=>{
                 cy.wrap($el).find("button").click();
             }
         });
+        cy.get('.brand').then((logo)=>{
+            cy.log(logo.text());
+        })
 
     })
     // it('Test case2', ()=>{
@@ -28,4 +31,4 @@ describe('First suit', ()=>{
     // })
     // it('Test case3', ()=>{
         
-    // })
+    })
