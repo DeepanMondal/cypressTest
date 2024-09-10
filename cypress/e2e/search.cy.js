@@ -24,11 +24,9 @@ describe('First suit', ()=>{
         cy.get('.brand').then((logo)=>{
             cy.log(logo.text());
         })
+        //assertion in cypress
+        cy.get('.brand').should('have.text','GREENKART');
 
-    })
-    // it('Test case2', ()=>{
-    //     cy.visit("https://rahulshettyacademy.com");
-    // })
-    // it('Test case3', ()=>{
-        
+
+    })  
     })
