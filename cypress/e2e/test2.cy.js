@@ -21,9 +21,13 @@ describe('First suit', ()=>{
                 cy.wrap($el).find("button").click();
             }
         });
+        let logotxt = "abc";
         cy.get('.brand').then((logo)=>{
             cy.log(logo.text());
+            logotxt = logo.text();
+            cy.log(logotxt);
         })
+        cy.log(logotxt);
         //assertion in cypress
         cy.get('.brand').should('have.text','GREENKART');
 
